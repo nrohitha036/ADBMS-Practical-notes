@@ -2,13 +2,14 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    N NUMBER := 5;
-    FACT NUMBER := 1;
+    str VARCHAR2(100) := '&str';
+    rev VARCHAR2(100) := '';
 BEGIN
-    FOR I IN 1..N LOOP
-        FACT := FACT * I;
+    FOR i IN REVERSE 1..LENGTH(str) LOOP
+        rev := rev || SUBSTR(str, i, 1);
     END LOOP;
 
-    DBMS_OUTPUT.PUT_LINE('Factorial of ' || N || ' = ' || FACT);
+    DBMS_OUTPUT.PUT_LINE('Original String: ' || str);
+    DBMS_OUTPUT.PUT_LINE('Reversed String: ' || rev);
 END;
 /
