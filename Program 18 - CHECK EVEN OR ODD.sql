@@ -1,5 +1,5 @@
 DECLARE
-    num NUMBER := :input_num;
+    num NUMBER := 10;
 BEGIN
     IF MOD(num, 2) = 0 THEN
         DBMS_OUTPUT.PUT_LINE(num || ' is Even');
