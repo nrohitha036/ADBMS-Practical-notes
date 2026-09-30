@@ -1,5 +1,5 @@
 DECLARE
-    num NUMBER := :input_num;
+    num NUMBER := 121;
     temp NUMBER;
     digit NUMBER;
     reverse_num NUMBER := 0;
