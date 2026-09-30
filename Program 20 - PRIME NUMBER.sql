@@ -1,5 +1,5 @@
 DECLARE
-    num NUMBER := :input_num;
+    num NUMBER := 17;
     i NUMBER;
     flag NUMBER := 0;
 BEGIN
