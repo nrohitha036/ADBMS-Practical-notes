@@ -1,7 +1,7 @@
 DECLARE
-    f   NUMBER := :Enter_num1;
-    s   NUMBER := :Enter_num2;
-    uoc NUMBER := :Enter_operation;
+    f   NUMBER := 10;
+    s   NUMBER := 5;
+    uoc NUMBER := 1;
 
 BEGIN
     IF uoc = 1 THEN
